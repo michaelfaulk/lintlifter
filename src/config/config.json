@@ -32,6 +32,11 @@
     "gtm_id": "GTM-XXXXXX"
   },
 
+  "google_tag_manager": {
+    "enable": false,
+    "gtm_id": "GTM-XXXXXX"
+  },
+
   "disqus": {
     "enable": false,
     "shortname": "themefisher-template",
