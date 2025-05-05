@@ -1,6 +1,6 @@
 ---
 title: "Contact"
-meta_title: ""
-description: "this is meta description"
+meta_title: "Contact LintLifter"
+description: "Contact LintLifter"
 draft: false
 ---

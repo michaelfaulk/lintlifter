@@ -7,6 +7,11 @@
   @apply relative flex flex-wrap items-center justify-between;
 }
 
+/* line-height fix for logo */
+div:has(.navbar-brand) {
+  line-height: 0;
+}
+
 .navbar-brand {
   @apply text-text-dark dark:text-darkmode-text-dark text-xl font-semibold;
   image {

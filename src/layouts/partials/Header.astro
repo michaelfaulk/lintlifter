@@ -1,5 +1,5 @@
 ---
-import Logo from "@/components/Logo.astro";
+import Logo from '././public/images/logo.svg';
 import ThemeSwitcher from "@/components/ThemeSwitcher.astro";
 import config from "@/config/config.json";
 import menu from "@/config/menu.json";
@@ -26,7 +26,9 @@ const { pathname } = Astro.url;
   <nav class="navbar container">
     <!-- logo -->
     <div class="order-0">
-      <Logo />
+      <a href="/" class="navbar-brand inline-block">
+        <Logo height={125} />
+      </a>
     </div>
     <!-- navbar toggler -->
     <input id="nav-toggle" type="checkbox" class="hidden" />
@@ -108,7 +110,7 @@ const { pathname } = Astro.url;
         navigation_button.enable && (
           <li class="mt-4 inline-block lg:hidden">
             <a
-              class="btn btn-outline-primary btn-sm"
+              class="btn btn-outline-primary btn"
               href={navigation_button.link}
             >
               {navigation_button.label}
@@ -133,7 +135,7 @@ const { pathname } = Astro.url;
       {
         navigation_button.enable && (
           <a
-            class="btn btn-outline-primary btn-sm hidden lg:inline-block"
+            class="btn btn-outline-primary btn hidden lg:inline-block"
             href={navigation_button.link}
           >
             {navigation_button.label}

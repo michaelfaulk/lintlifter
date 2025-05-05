@@ -3,22 +3,17 @@
     {
       "name": "facebook",
       "icon": "FaFacebook",
-      "link": "https://www.facebook.com/"
+      "link": "https://www.facebook.com/lintlifter"
     },
     {
-      "name": "twitter",
-      "icon": "FaTwitter",
-      "link": "https://twitter.com/"
+      "name": "google",
+      "icon": "FaGoogle",
+      "link": "https://google.com/"
     },
     {
-      "name": "github",
-      "icon": "FaGithub",
-      "link": "https://www.github.com/"
-    },
-    {
-      "name": "linkedin",
-      "icon": "FaLinkedin",
-      "link": "https://www.linkedin.com/"
+      "name": "yelp",
+      "icon": "FaYelp",
+      "link": "https://www.yelp.com/biz/lintlifter-west-bloomfield"
     }
   ]
 }
