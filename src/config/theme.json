@@ -16,7 +16,7 @@
         "text_dark": "#040404",
         "text_light": "#717171",
         "text_green": "#1a8417",
-        "text_light-green": "#23af1f",
+        "text_light_green": "#23af1f",
         "text_teal": "#198585"
       }
     },
@@ -36,7 +36,7 @@
         "text_dark": "#fff",
         "text_light": "#B4AFB6",
         "text_green": "#1a8417",
-        "text_light-green": "#23af1f",
+        "text_light_green": "#23af1f",
         "text_teal": "#198585"
       }
     }
