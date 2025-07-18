@@ -25,7 +25,7 @@ features:
       link: "#"
 
   - title: "Our Services"
-    image: "/images/service-2.png"
+    image: "/images/dryer-with-green-towel.jpg"
     content: "Our technicians always provide fast, friendly and professional service."
     bulletpoints:
       - "**Dryer Vent Cleaning** - Comprehensive cleaning to remove lint, boost airflow, and prevent hazards"
@@ -41,7 +41,7 @@ features:
       link: "/quote"
 
   - title: "100% Satisfaction Guarantee"
-    image: "/images/service-3.png"
+    image: "/images/dirty-dryer-vent.jpg"
     content: "LintLifter is committed to 100% customer satisfaction with our service. If for any reason you are not satisfied with the work we perform, simply let our technician know. Every LintLifter technician is dedicated to maintain the highest standard of customer service, and in the unlikely event a customer is not satisfied, our technician is empowered to correct the condition immediately."
     bulletpoints:
       - "Fully Licensed & Insured – Trusted experts since 2003"
