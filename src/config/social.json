@@ -2,13 +2,18 @@
   "main": [
     {
       "name": "facebook",
-      "icon": "FaFacebook",
+      "icon": "FaFacebookF",
       "link": "https://www.facebook.com/lintlifter"
     },
     {
       "name": "google",
       "icon": "FaGoogle",
-      "link": "https://google.com/"
+      "link": "https://maps.app.goo.gl/QAxuH38GQYbt7EmD6"
+    },
+    {
+      "name": "youtube",
+      "icon": "FaYoutube",
+      "link": "https://www.youtube.com/@lintlifter6435"
     },
     {
       "name": "yelp",

@@ -1,53 +1,70 @@
 ---
 # Banner
 banner:
-  title: "The Ultimate Starter Template You Need To Start Your Astro Project"
-  content: "Astroplate is a free starter template built with Astro and TailwindCSS, providing everything you need to jumpstart your Astro project and save valuable time."
-  image: "/images/banner.png"
+  title: "Southeast Michigan Dryer Vent, Air Duct & HVAC Cleaning"
+  content: "Whether you're updating dryer ductwork, promoting air quality, or safeguarding your property from fire hazards, LintLifter delivers professional, dependable service tailored to your needs."
+  image: ""
   button:
     enable: true
-    label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/astroplate"
+    label: "Get Quote"
+    link: "/quote"
 
 # Features
 features:
-  - title: "What's Included in Astroplate"
-    image: "/images/service-1.png"
-    content: "Astroplate is a comprehensive starter template that includes everything you need to get started with your Astro project. What's Included in Astroplate"
+  - title: "Clean Air. Safe Home. Lower Bills."
+    image: "/images/exploding-dryer-vent.jpg"
+    content: "LintLifter's mission is simple: Keeping your home safe, efficient, and comfortable with expert cleaning services that make a real difference."
     bulletpoints:
-      - "10+ Pre-build pages"
-      - "95+ Google Pagespeed Score"
-      - "Build with Astro and TailwindCSS for easy and customizable styling"
-      - "Fully responsive on all devices"
-      - "SEO-optimized for better search engine rankings"
-      - "**Open-source and free** for personal and commercial use"
-    button:
-      enable: false
-      label: "Get Started Now"
-      link: "#"
-
-  - title: "Discover the Key Features Of Astro"
-    image: "/images/service-2.png"
-    content: "Astro is an all-in-one web framework for building fast, content-focused websites. It offers a range of exciting features for developers and website creators. Some of the key features are:"
-    bulletpoints:
-      - "Zero JS, by default: No JavaScript runtime overhead to slow you down."
-      - "Customizable: Tailwind, MDX, and 100+ other integrations to choose from."
-      - "UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more."
-    button:
-      enable: true
-      label: "Get Started Now"
-      link: "https://github.com/zeon-studio/astroplate"
-
-  - title: "The Top Reasons to Choose Astro for Your Next Project"
-    image: "/images/service-3.png"
-    content: "With Astro, you can build modern and content-focused websites without sacrificing performance or ease of use."
-    bulletpoints:
-      - "Instantly load static sites for better user experience and SEO."
-      - "Intuitive syntax and support for popular frameworks make learning and using Astro a breeze."
-      - "Use any front-end library or framework, or build custom components, for any project size."
-      - "Built on cutting-edge technology to keep your projects up-to-date with the latest web standards."
+      - "**Save on Utility Costs** – Clients report monthly energy savings of $15 – $22"
+      - "**Quicker Drying** – With your dryer operating at peak performance you get more loads done in less time"
+      - "**Reduce Fire Risk** – Nearly 16,000 home fires a year are started by household dryers"
+      - "**Extend Appliance Life** – Our thorough 'inside-out' cleaning boosts dryer efficiency and lifespan"
     button:
       enable: false
       label: ""
-      link: ""
+      link: "#"
+
+  - title: "Our Services"
+    image: "/images/service-2.png"
+    content: "Our technicians always provide fast, friendly and professional service."
+    bulletpoints:
+      - "**Dryer Vent Cleaning** - Comprehensive cleaning to remove lint, boost airflow, and prevent hazards"
+      - "**Air Duct Cleaning** - Improve indoor air quality and reduce dust for cleaner, fresher air right away"
+      - "**Condenser Cleaning** - Maintain HVAC efficiency and reduce energy strain by keeping condenser units clear of debris"
+      - "**Furnace Cleaning** - Ensure HVAC cleanliness and efficiency to maintain healthy air in your home"
+      - "**Disinfecting & Sanitizing** - Coat your ductwork with hospital-grade disinfectant safe for families and pets, targeting mold and bacteria"
+      - "**Dryer Duct Installation & Repair** - From new installations to proper sealing and alignment, we ensure your dryer is set up safely and efficiently"
+      - "**Property Management Services** - Partnering with landlords, HOAs, and commercial properties across Michigan for dependable, bulk-service arrangements"
+    button:
+      enable: true
+      label: "Get Quote"
+      link: "/quote"
+
+  - title: "100% Satisfaction Guarantee"
+    image: "/images/service-3.png"
+    content: "LintLifter is committed to 100% customer satisfaction with our service. If for any reason you are not satisfied with the work we perform, simply let our technician know. Every LintLifter technician is dedicated to maintain the highest standard of customer service, and in the unlikely event a customer is not satisfied, our technician is empowered to correct the condition immediately."
+    bulletpoints:
+      - "Fully Licensed & Insured – Trusted experts since 2003"
+    button:
+      enable: false
+      label: "Get Quote"
+      link: "/quote"
+
+  - title: "Protect Your Health and Home Today"
+    image: "/images/fire-department-logo.png"
+    content: "LintLifter will imporove your comfort, health and safety."
+    bulletpoints:
+      - "LintLifter has partnered with many fire departments in Southeast Michigan"
+      - "Flexible scheduling"
+      - "Free estimates"
+    button:
+      enable: true
+      label: "Get Quote"
+      link: "/quote"
+
+# Videos
+videos:
+  - title: "Fire Prevention Open House"
+    content: ""
+    embed: "wSVglY416k8"
 ---

@@ -5,18 +5,22 @@
       "url": "/"
     },
     {
-      "name": "Contact",
-      "url": "/contact"
+      "name": "Get Quote",
+      "url": "/quote"
     },
     {
-      "name": "Elements",
-      "url": "/elements"
+      "name": "Contact",
+      "url": "/contact"
     },
     {
       "name": "Pages",
       "url": "",
       "hasChildren": true,
       "children": [
+        {
+          "name": "Elements",
+          "url": "/elements"
+        },
         {
           "name": "Blog",
           "url": "/blog"
@@ -42,16 +46,16 @@
   ],
   "footer": [
     {
-      "name": "Contact",
-      "url": "/contact"
-    },
-    {
-      "name": "Elements",
-      "url": "/elements"
+      "name": "Get Quote",
+      "url": "/quote"
     },
     {
       "name": "Privacy Policy",
       "url": "/privacy-policy"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
     }
   ]
 }

@@ -1,0 +1,168 @@
+---
+import config from "@/config/config.json";
+import Base from "@/layouts/Base.astro";
+import PageHeader from "@/partials/PageHeader.astro";
+import { getEntry } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
+const quote = (await getEntry(
+  "quote",
+  "-index"
+)) as CollectionEntry<"quote">;
+const { quote_form_action }: { quote_form_action: string } = config.params;
+const { title, description, meta_title, image } = quote.data;
+---
+
+<Base
+  title={title}
+  meta_title={meta_title}
+  description={description}
+  image={image}
+>
+  <PageHeader title={title} />
+  <section class="section-sm">
+    <div class="container">
+      <div class="row">
+        <div class="mx-auto md:col-10 lg:col-6">
+          <form action={quote_form_action} method="POST">
+            <div class="mb-6">
+              <label for="name" class="form-label">
+                Name <span class="text-red-500">*</span>
+              </label>
+              <input
+                id="name"
+                name="name"
+                class="form-input"
+                placeholder="John Doe"
+                type="text"
+                required
+              />
+            </div>
+            <div class="mb-6">
+              <label for="address" class="form-label">
+                Address <span class="text-red-500">*</span>
+              </label>
+              <input
+                id="address"
+                name="address"
+                class="form-input"
+                placeholder="123 Sample St, Lansing MI, 12345"
+                type="text"
+              />
+            </div>
+            <div class="mb-6">
+              <label for="email" class="form-label">
+                Email <span class="text-red-500">*</span>
+              </label>
+              <input
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="john.doe@email.com"
+                type="email"
+                required
+              />
+            </div>
+            <div class="mb-6">
+              <label for="phone" class="form-label">
+                Phone <span class="text-red-500">*</span>
+              </label>
+              <input
+                id="phone"
+                name="phone"
+                class="form-input"
+                placeholder="(248) 555-1212"
+                type="tel"
+                required
+              />
+            </div>
+
+            <div class="mb-6">
+              <p class="form-label">Select Required Services <span class="text-red-500">*</span></p>
+              <label class="form-label">
+                <input
+                  id="dryerventcleaning"
+                  name="service"
+                  class="form-checkbox"
+                  value="Dryer Vent Cleaning"
+                  type="checkbox"
+                />
+                Dryer Vent Cleaning
+              </label>
+              <label class="form-label">
+                <input
+                  id="airductcleaning"
+                  name="service"
+                  class="form-checkbox"
+                  value="Air Duct Cleaning"
+                  type="checkbox"
+                />
+                Air Duct Cleaning
+              </label>
+              <label class="form-label">
+                <input
+                  id="condensorcleaning"
+                  name="service"
+                  class="form-checkbox"
+                  value="Condensor Cleaning"
+                  type="checkbox"
+                />
+                Condensor Cleaning
+              </label>
+              <label class="form-label">
+                <input
+                  id="furnacecleaning"
+                  name="service"
+                  class="form-checkbox"
+                  value="Furnace Cleaning"
+                  type="checkbox"
+                />
+                Furnace Cleaning
+              </label>
+              <label class="form-label">
+                <input
+                  id="dryerductrepair"
+                  name="service"
+                  class="form-checkbox"
+                  value="Dryer Duct Repair"
+                  type="checkbox"
+                />
+                Dryer Duct Repair
+              </label>
+              <label class="form-label">
+                <input
+                  id="dryerductinstall"
+                  name="service"
+                  class="form-checkbox"
+                  value="Dryer Duct Install"
+                  type="checkbox"
+                />
+                Dryer Duct Install
+              </label>
+              <input
+                id="otherservicetext"
+                name="otherservicetext"
+                class="form-input"
+                placeholder="Other Service"
+                type="text"
+              />  
+            </div>
+
+            <div class="mb-6">
+              <label for="message" class="form-label">
+                Anything else?
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-input"
+                placeholder="Message goes here..."
+                rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

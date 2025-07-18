@@ -1,10 +1,10 @@
 ---
-enable: true
-title: "Ready to build your next project with Astro?"
+enable: false
+title: "Keep Your Home Running Efficiently"
 image: "/images/call-to-action.png"
-description: "Experience the future of web development with Astroplate and Astro. Build lightning-fast static sites with ease and flexibility."
+description: "Whether you're updating dryer ductwork, promoting air quality, or safeguarding your property from fire hazards, LintLifter delivers professional, dependable service tailored to your needs."
 button:
   enable: true
-  label: "Get Started Now"
-  link: "https://github.com/zeon-studio/astroplate"
+  label: "Get Quote"
+  link: "/quote"
 ---

@@ -4,10 +4,11 @@ import Base from "@/layouts/Base.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import CallToAction from "@/partials/CallToAction.astro";
 import Testimonial from "@/partials/Testimonial.astro";
-import type { Button, Feature } from "@/types";
+import type { Button, Feature, Video } from "@/types";
 import type { CollectionEntry } from "astro:content";
 import { getEntry } from "astro:content";
 import { FaCheck } from "react-icons/fa";
+import Youtube from "@/shortcodes/Youtube.tsx";
 
 interface Homepage {
   banner: {
@@ -17,6 +18,7 @@ interface Homepage {
     button: Button;
   };
   features: Feature[];
+  videos: Video[];
 }
 
 const homepage = (await getEntry(
@@ -34,12 +36,12 @@ const call_to_action = (await getEntry(
   "call-to-action"
 )) as CollectionEntry<"ctaSection">;
 
-const { banner, features } = homepage.data as Homepage;
+const { banner, features, videos } = homepage.data as Homepage;
 ---
 
 <Base>
   <!-- Banner -->
-  <section class="section pt-14">
+  <section class="section-sm">
     <div class="container">
       <div class="row justify-center">
         <div class="lg:col-7 md:col-9 mb-8 text-center">
@@ -121,6 +123,28 @@ const { banner, features } = homepage.data as Homepage;
     ))
   }
   <!-- /Features -->
+
+  <!-- Videos -->
+  {
+    videos.map((video, index: number) => (
+      <section class={`section-sm ${index % 2 === 0 && "bg-gradient"}`}>
+        <div class="container">
+          <div class="row items-center justify-between">
+            <h2 set:html={markdownify(video.title)} class="mb-4" />
+            {
+              video.content && (
+                <p set:html={markdownify(video.content)} class="mb-8 text-lg" />
+              )
+            }
+            <p>
+              <Youtube client:load id={video.embed} title={video.title} />
+            </p>
+          </div>
+        </div>
+      </section>
+    ))
+  }
+  <!-- /Videos -->
 
   <Testimonial testimonial={testimonial} />
   <CallToAction call_to_action={call_to_action} />
