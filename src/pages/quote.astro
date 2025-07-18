@@ -77,6 +77,8 @@ const { title, description, meta_title, image } = quote.data;
               />
             </div>
 
+            <hr class="mb-6" />
+
             <div class="mb-6">
               <p class="form-label">Select Required Services <span class="text-red-500">*</span></p>
               <label class="form-label">
@@ -101,13 +103,13 @@ const { title, description, meta_title, image } = quote.data;
               </label>
               <label class="form-label">
                 <input
-                  id="condensorcleaning"
+                  id="condensercleaning"
                   name="service"
                   class="form-checkbox"
-                  value="Condensor Cleaning"
+                  value="Condenser Cleaning"
                   type="checkbox"
                 />
-                Condensor Cleaning
+                Condenser Cleaning
               </label>
               <label class="form-label">
                 <input
@@ -147,6 +149,99 @@ const { title, description, meta_title, image } = quote.data;
                 type="text"
               />  
             </div>
+
+            <hr class="mb-6" />
+            
+            <div class="mb-6">
+              <p><strong>Please answer the questions for the service(s) you are inquiring about so that we may give you the best possible quote.</strong></p>
+            </div>
+
+            <div class="mb-6">
+              <label for="dryerventcleaningdetails" class="form-label">
+                <strong>Dryer Vent Cleaning</strong> - Please tell us how many dryers are in the home, what floor of your home the dryer is located in, and if you are currently experiencing a problem or if this is just a maintenance request.
+              </label>
+              <input
+                id="dryerventcleaningdetails"
+                name="dryerventcleaningdetails"
+                class="form-input"
+                placeholder="Dryer Vent Cleaning Details"
+                type="text"
+              />
+            </div>
+            <div class="mb-6">
+              <label for="airductcleaningdetails" class="form-label">
+                <strong>Air Duct Cleaning</strong> - What is the square footage of your home and how many furnaces do you have?
+              </label>
+              <input
+                id="airductcleaningdetails"
+                name="airductcleaningdetails"
+                class="form-input"
+                placeholder="Air Duct Cleaning Details"
+                type="text"
+              />
+            </div>
+            <div class="mb-6">
+              <label for="condensercleaningdetails" class="form-label">
+                <strong>Condenser Cleaning</strong> - Is this an AC or Refrigerator, how old is the condenser, where is it located in the home, and when is the last time that it was cleaned?
+              </label>
+              <input
+                id="condensercleaningdetails"
+                name="condensercleaningdetails"
+                class="form-input"
+                placeholder="Condenser Cleaning Details"
+                type="text"
+              />
+            </div>
+            <div class="mb-6">
+              <label for="furnacecleaningdetails" class="form-label">
+                <strong>Furnace Cleaning</strong> - How old is the Furnace, where is it located in the home, and when is the last time that it was cleaned?
+              </label>
+              <input
+                id="furnacecleaningdetails"
+                name="furnacecleaningdetails"
+                class="form-input"
+                placeholder="Furnace Cleaning Details"
+                type="text"
+              />
+            </div>
+            <div class="mb-6">
+              <label for="dryerductrepairdetails" class="form-label">
+                <strong>Dryer Duct Repair</strong> - Please give us a brief description of what you are experiencing.
+              </label>
+              <input
+                id="dryerductrepairdetails"
+                name="dryerductrepairdetails"
+                class="form-input"
+                placeholder="Dryer Duct Repair Details"
+                type="text"
+              />
+            </div>
+            <div class="mb-6">
+              <label for="dryerductinstallationdetails" class="form-label">
+                <strong>Dryer Duct Installation</strong> - Is this a new installation or are you needing to re route the current duct.
+              </label>
+              <input
+                id="dryerductinstallationdetails"
+                name="dryerductinstallationdetails"
+                class="form-input"
+                placeholder="Dryer Duct Installation Details"
+                type="text"
+              />
+            </div>
+            <div class="mb-6">
+              <label for="otherservicerequireddetails" class="form-label">
+                <strong>Other Service Required</strong> - Please give a brief description of the service required.
+              </label>
+              <input
+                id="otherservicerequireddetails"
+                name="otherservicerequireddetails"
+                class="form-input"
+                placeholder="Other Service Required Details"
+                type="text"
+              />
+            </div>
+
+            <hr class="mb-6" />
 
             <div class="mb-6">
               <label for="message" class="form-label">
