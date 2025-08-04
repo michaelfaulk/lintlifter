@@ -25,9 +25,6 @@
 .social-icons li a svg {
   @apply h-5 w-5;
 }
-.social-icons + h4 {
-  @apply mt-4;
-}
 
 /* notice */
 .notice {

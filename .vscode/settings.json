@@ -1,6 +1,7 @@
 {
   "files.associations": {
-    "*.mdx": "markdown"
+    "*.mdx": "markdown",
+    "*.css": "tailwindcss"
   },
   "tailwindCSS.experimental.configFile": "src/styles/main.css"
 }

@@ -4,6 +4,10 @@ banner:
   title: "Southeast Michigan Dryer Vent, Air Duct & HVAC Cleaning"
   content: "Whether you're updating dryer ductwork, promoting air quality, or safeguarding your property from fire hazards, LintLifter delivers professional, dependable service tailored to your needs."
   image: ""
+  phone:
+    enable: true
+    formatted: "(248) 842-8055"
+    link: "tel:+12488428055"
   button:
     enable: true
     label: "Get Quote"
@@ -19,6 +23,10 @@ features:
       - "**Quicker Drying** – With your dryer operating at peak performance you get more loads done in less time"
       - "**Reduce Fire Risk** – Nearly 16,000 home fires a year are started by household dryers"
       - "**Extend Appliance Life** – Our thorough 'inside-out' cleaning boosts dryer efficiency and lifespan"
+    phone:
+      enable: false
+      formatted: "(248) 842-8055"
+      link: "tel:+12488428055"
     button:
       enable: false
       label: ""
@@ -35,6 +43,10 @@ features:
       - "**Disinfecting & Sanitizing** - Coat your ductwork with hospital-grade disinfectant safe for families and pets, targeting mold and bacteria"
       - "**Dryer Duct Installation & Repair** - From new installations to proper sealing and alignment, we ensure your dryer is set up safely and efficiently"
       - "**Property Management Services** - Partnering with landlords, HOAs, and commercial properties across Michigan for dependable, bulk-service arrangements"
+    phone:
+      enable: true
+      formatted: "(248) 842-8055"
+      link: "tel:+12488428055"
     button:
       enable: true
       label: "Get Quote"
@@ -45,6 +57,10 @@ features:
     content: "LintLifter is committed to 100% customer satisfaction with our service. If for any reason you are not satisfied with the work we perform, simply let our technician know. Every LintLifter technician is dedicated to maintain the highest standard of customer service, and in the unlikely event a customer is not satisfied, our technician is empowered to correct the condition immediately."
     bulletpoints:
       - "Fully Licensed & Insured – Trusted experts since 2003"
+    phone:
+      enable: false
+      formatted: "(248) 842-8055"
+      link: "tel:+12488428055"
     button:
       enable: false
       label: "Get Quote"
@@ -57,6 +73,10 @@ features:
       - "LintLifter has partnered with many fire departments in Southeast Michigan"
       - "Flexible scheduling"
       - "Free estimates"
+    phone:
+      enable: true
+      formatted: "(248) 842-8055"
+      link: "tel:+12488428055"
     button:
       enable: true
       label: "Get Quote"

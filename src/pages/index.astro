@@ -4,7 +4,7 @@ import Base from "@/layouts/Base.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import CallToAction from "@/partials/CallToAction.astro";
 import Testimonial from "@/partials/Testimonial.astro";
-import type { Button, Feature, Video } from "@/types";
+import type { Phone, Button, Feature, Video } from "@/types";
 import type { CollectionEntry } from "astro:content";
 import { getEntry } from "astro:content";
 import { FaCheck } from "react-icons/fa";
@@ -15,6 +15,7 @@ interface Homepage {
     title: string;
     content: string;
     image: string;
+    phone: Phone;
     button: Button;
   };
   features: Feature[];
@@ -51,17 +52,30 @@ const { banner, features, videos } = homepage.data as Homepage;
           />
           <p set:html={markdownify(banner.content)} class="mb-8" />
           {
+            banner.phone.enable && (
+              <h4 class="mt-4 mb-4 text-center text-text-dark hover:text-primary dark:text-white dark:hover:text-darkmode-primary">
+                <a
+                  href={banner.phone.link}
+                >
+                  {banner.phone.formatted}
+                </a>
+              </h4>
+            )
+          }
+          {
             banner.button.enable && (
-              <a
-                class="btn btn-primary"
-                href={banner.button.link}
-                target={
-                  banner.button.link.startsWith("http") ? "_blank" : "_self"
-                }
-                rel="noopener"
-              >
-                {banner.button.label}
-              </a>
+              <p class="text-center">
+                <a
+                  class="btn btn-primary"
+                  href={banner.button.link}
+                  target={
+                    banner.button.link.startsWith("http") ? "_blank" : "_self"
+                  }
+                  rel="noopener"
+                >
+                  {banner.button.label}
+                </a>
+              </p>
             )
           }
         </div>
@@ -111,10 +125,23 @@ const { banner, features, videos } = homepage.data as Homepage;
                   </li>
                 ))}
               </ul>
+              {
+                feature.phone.enable && (
+                  <h4 class="mt-4 text-center text-text-dark hover:text-primary dark:text-white dark:hover:text-darkmode-primary">
+                    <a
+                      href={feature.phone.link}
+                    >
+                      {feature.phone.formatted}
+                    </a>
+                  </h4>
+                )
+              }
               {feature.button.enable && (
-                <a class="btn btn-primary mt-5" href={feature.button.link}>
-                  {feature.button.label}
-                </a>
+                <p class="text-center">
+                  <a class="mt-4 btn btn-primary" href={feature.button.link}>
+                    {feature.button.label}
+                  </a>
+                </p>
               )}
             </div>
           </div>

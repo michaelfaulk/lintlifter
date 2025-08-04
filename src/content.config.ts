@@ -97,6 +97,11 @@ const homepageCollection = defineCollection({
       title: z.string(),
       content: z.string(),
       image: z.string(),
+      phone: z.object({
+        enable: z.boolean(),
+        formatted: z.string(),
+        link: z.string(),
+      }),
       button: z.object({
         enable: z.boolean(),
         label: z.string(),
@@ -109,6 +114,11 @@ const homepageCollection = defineCollection({
         image: z.string(),
         content: z.string(),
         bulletpoints: z.array(z.string()),
+        phone: z.object({
+          enable: z.boolean(),
+          formatted: z.string(),
+          link: z.string(),
+        }),
         button: z.object({
           enable: z.boolean(),
           label: z.string(),
@@ -137,6 +147,11 @@ const ctaSectionCollection = defineCollection({
     title: z.string(),
     description: z.string(),
     image: z.string(),
+    phone: z.object({
+      enable: z.boolean(),
+      formatted: z.string(),
+      link: z.string(),
+    }),
     button: z.object({
       enable: z.boolean(),
       label: z.string(),
