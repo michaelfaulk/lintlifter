@@ -53,7 +53,7 @@ const { banner, features, videos } = homepage.data as Homepage;
           <p set:html={markdownify(banner.content)} class="mb-8" />
           {
             banner.phone.enable && (
-              <h4 class="mt-4 mb-4 text-center text-text-dark hover:text-primary dark:text-white dark:hover:text-darkmode-primary">
+              <h4 class="mt-4 text-center text-text-dark hover:text-primary dark:text-white dark:hover:text-darkmode-primary">
                 <a
                   href={banner.phone.link}
                 >
@@ -64,7 +64,7 @@ const { banner, features, videos } = homepage.data as Homepage;
           }
           {
             banner.button.enable && (
-              <p class="text-center">
+              <p class="text-center mt-4">
                 <a
                   class="btn btn-primary"
                   href={banner.button.link}
@@ -137,8 +137,8 @@ const { banner, features, videos } = homepage.data as Homepage;
                 )
               }
               {feature.button.enable && (
-                <p class="text-center">
-                  <a class="mt-4 btn btn-primary" href={feature.button.link}>
+                <p class="text-center mt-4">
+                  <a class="btn btn-primary" href={feature.button.link}>
                     {feature.button.label}
                   </a>
                 </p>
