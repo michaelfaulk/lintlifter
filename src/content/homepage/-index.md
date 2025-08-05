@@ -87,4 +87,8 @@ videos:
   - title: "Fire Prevention Open House"
     content: ""
     embed: "wSVglY416k8"
+
+  - title: "Dryer Vent Cleaning is a Must (NBC Today Show)"
+    content: ""
+    embed: "JsMKp1vJEdk"
 ---
