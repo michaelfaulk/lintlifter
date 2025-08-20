@@ -1,0 +1,27 @@
+---
+
+import { LightGallery } from 'astro-lightgallery';
+const { call_gallery } = Astro.props;
+---
+
+<section class="section-sm bg-gradient">
+    <div class="container">
+      <h2>Photo Gallery</h2>
+      <LightGallery
+        layout={{
+          imgs: [
+            { src: "/images/gallery/exploding-dryer-vent.jpg", },
+            { src: "/images/gallery/dirty-dryer-vent.jpg", },
+            { src: "/images/gallery/dryer-with-green-towel.jpg", },
+            { src: "/images/gallery/exploding-dryer-vent.jpg", },
+            { src: "/images/gallery/dirty-dryer-vent.jpg", },
+            { src: "/images/gallery/dryer-with-green-towel.jpg", },
+            { src: "/images/gallery/exploding-dryer-vent.jpg", },
+          ],
+        }}
+        options={{
+          thumbnail: true,
+        }}
+      />
+    </div>
+  </section>

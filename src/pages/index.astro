@@ -2,6 +2,7 @@
 import ImageMod from "@/components/ImageMod.astro";
 import Base from "@/layouts/Base.astro";
 import { markdownify } from "@/lib/utils/textConverter";
+import ImageGallery from "@/partials/ImageGallery.astro";
 import CallToAction from "@/partials/CallToAction.astro";
 import Testimonial from "@/partials/Testimonial.astro";
 import type { Phone, Button, Feature, Video } from "@/types";
@@ -175,6 +176,7 @@ const { banner, features, videos } = homepage.data as Homepage;
   </section>
   <!-- /Videos -->
 
+  <ImageGallery image_gallery="{image_gallery}" />
   <Testimonial testimonial={testimonial} />
   <CallToAction call_to_action={call_to_action} />
 </Base>
