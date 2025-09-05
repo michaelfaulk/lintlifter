@@ -17,11 +17,6 @@
     "blog_folder": "blog"
   },
 
-  "params": {
-    "contact_form_action": "#",
-    "quote_form_action": "#"
-  },
-
   "navigation_button": {
     "enable": true,
     "label": "Get Quote",
