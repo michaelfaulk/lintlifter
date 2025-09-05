@@ -54,7 +54,7 @@ features:
 
   - title: "100% Satisfaction Guarantee"
     image: "/images/dirty-dryer-vent.jpg"
-    content: "LintLifter is committed to 100% customer satisfaction with our service. If for any reason you are not satisfied with the work we perform, simply let our technician know. Every LintLifter technician is dedicated to maintain the highest standard of customer service, and in the unlikely event a customer is not satisfied, our technician is empowered to correct the condition immediately."
+    content: "LintLifter is committed to 100% customer satisfaction with our service. If for any reason you are not satisfied with the work we perform, simply let our technician know. Every LintLifter technician is dedicated to maintaining the highest standard of customer service, and in the unlikely event a customer is not satisfied, our technician is empowered to correct the situation immediately."
     bulletpoints:
       - "Fully Licensed & Insured – Trusted experts since 2003"
     phone:
@@ -68,7 +68,7 @@ features:
 
   - title: "Protect Your Health and Home Today"
     image: "/images/fire-department-logo.png"
-    content: "LintLifter will imporove your comfort, health and safety."
+    content: "LintLifter will improve your comfort, health and safety."
     bulletpoints:
       - "LintLifter has partnered with many fire departments in Southeast Michigan"
       - "Flexible scheduling"

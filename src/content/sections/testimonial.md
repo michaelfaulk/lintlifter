@@ -38,7 +38,7 @@ testimonials:
   - name: "Paul Harmer"
     designation: ""
     avatar: "/images/avatar-sm.png"
-    content: "Kind, courteous, respectful. Did a throurough job cleaning the dryer, dryer duct and all connections and hardware. Highly recommend."
+    content: "Kind, courteous, respectful. Did a thorough job cleaning the dryer, dryer duct and all connections and hardware. Highly recommend."
 
   - name: "Nate Petrusha"
     designation: ""
