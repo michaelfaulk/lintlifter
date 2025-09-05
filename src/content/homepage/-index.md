@@ -1,8 +1,8 @@
 ---
 # Banner
 banner:
-  title: "Southeast Michigan Dryer Vent, Air Duct & HVAC Cleaning"
-  content: "Whether you're updating dryer ductwork, promoting air quality, or safeguarding your property from fire hazards, LintLifter delivers professional, dependable service tailored to your needs."
+  title: "Dryer Vent, Air Duct & HVAC Cleaning"
+  content: "Whether you're updating dryer ductwork, promoting air quality, or safeguarding your property from fire hazards, LintLifter delivers professional, dependable service tailored to your needs.<br /> <h4>Serving all of Southeast Michigan</h4>"
   image: ""
   phone:
     enable: true
@@ -37,6 +37,7 @@ features:
     content: "Our technicians always provide fast, friendly and professional service."
     bulletpoints:
       - "**Dryer Vent Cleaning** - Comprehensive cleaning to remove lint, boost airflow, and prevent hazards"
+      - "**Interior Dryer Cleaning** - open every dryer to clean and inspect safety"
       - "**Air Duct Cleaning** - Improve indoor air quality and reduce dust for cleaner, fresher air right away"
       - "**Condenser Cleaning** - Maintain HVAC efficiency and reduce energy strain by keeping condenser units clear of debris"
       - "**Furnace Cleaning** - Ensure HVAC cleanliness and efficiency to maintain healthy air in your home"
@@ -44,17 +45,17 @@ features:
       - "**Dryer Duct Installation & Repair** - From new installations to proper sealing and alignment, we ensure your dryer is set up safely and efficiently"
       - "**Property Management Services** - Partnering with landlords, HOAs, and commercial properties across Michigan for dependable, bulk-service arrangements"
     phone:
-      enable: true
+      enable: false
       formatted: "(248) 842-8055"
       link: "tel:+12488428055"
     button:
-      enable: true
+      enable: false
       label: "Get Quote"
       link: "/quote"
 
   - title: "100% Satisfaction Guarantee"
     image: "/images/dirty-dryer-vent.jpg"
-    content: "LintLifter is committed to 100% customer satisfaction with our service. If for any reason you are not satisfied with the work we perform, simply let our technician know. Every LintLifter technician is dedicated to maintaining the highest standard of customer service, and in the unlikely event a customer is not satisfied, our technician is empowered to correct the situation immediately."
+    content: "LintLifter is committed to 100% customer satisfaction. If for any reason, you are not satisfied with the work we perform, simply let our office know. If the technician has already departed we will schedule a follow-up visit free of charge to inspect and solve the problem. LintLifter is dedicated to maintaining the highest standard of customer service."
     bulletpoints:
       - "Fully Licensed & Insured – Trusted experts since 2003"
     phone:

@@ -1,5 +1,10 @@
 .header {
   @apply bg-body dark:bg-darkmode-body py-6;
+  .navbar-brand {
+    svg {
+      @apply md:max-h-full max-h-3/4 md:max-w-full max-w-3/4;
+    }
+  }
 }
 
 /* navbar items */
