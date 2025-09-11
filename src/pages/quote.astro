@@ -281,6 +281,14 @@ form.addEventListener('submit', function(e) {
     // Append the custom subject to the form data
     formData.append('subject', subject);
     
+    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+
+    if (!hCaptcha) {
+        e.preventDefault();
+        alert("Please fill out captcha field")
+        return
+    }
+
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
     
