@@ -253,6 +253,7 @@ const { title, description, meta_title, image } = quote.data;
                 placeholder="Message goes here..."
                 rows="4"></textarea>
             </div>
+            <div class="h-captcha mb-6" data-captcha="true"></div>
             <button type="submit" class="btn btn-primary">Submit</button>
             <div id="result"></div>
           </form>
@@ -267,40 +268,52 @@ const form = document.getElementById('form');
 const result = document.getElementById('result');
 
 form.addEventListener('submit', function(e) {
-    const formData = new FormData(form);
     e.preventDefault();
-
+    
+    const formData = new FormData(form);
+    
+    // Get the name input value
+    const name = formData.get('name');
+    
+    // Create a custom subject
+    const subject = `${name} has requested a quote from LintLifter.com`;
+    
+    // Append the custom subject to the form data
+    formData.append('subject', subject);
+    
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
-
-    result.innerHTML = "Please wait..."
+    
+    result.innerHTML = "Please wait...";
 
     fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: json
-        })
-        .then(async (response) => {
-            let json = await response.json();
-            if (response.status == 200) {
-                result.innerHTML = json.message;
-            } else {
-                console.log(response);
-                result.innerHTML = json.message;
-            }
-        })
-        .catch(error => {
-            console.log(error);
-            result.innerHTML = "Something went wrong!";
-        })
-        .then(function() {
-            form.reset();
-            setTimeout(() => {
-                result.style.display = "none";
-            }, 3000);
-        });
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+        },
+        body: json
+    })
+    .then(async (response) => {
+        let json = await response.json();
+        if (response.status == 200) {
+            result.innerHTML = json.message;
+        } else {
+            console.log(response);
+            result.innerHTML = json.message;
+        }
+    })
+    .catch(error => {
+        console.log(error);
+        result.innerHTML = "Something went wrong!";
+    })
+    .then(function() {
+        form.reset();
+        setTimeout(() => {
+            result.style.display = "none";
+        }, 3000);
+    });
 });
 </script>
+
+<script src="https://web3forms.com/client/script.js" async defer></script>
