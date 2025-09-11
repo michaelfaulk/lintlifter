@@ -38,7 +38,7 @@ const { title, description, meta_title, image } = contact.data;
     <div class="container">
       <div class="row">
         <div class="mx-auto md:col-10 lg:col-6">
-          <form method="POST" id="form">
+          <form method="POST" id="contact-form">
             <input type="hidden" name="access_key" value="d19f7552-c62a-4f8e-9262-696f3ae6e6d3">
             <div class="mb-6">
               <label for="name" class="form-label">
@@ -92,7 +92,7 @@ const { title, description, meta_title, image } = contact.data;
             </div>
             <div class="h-captcha mb-6" data-captcha="true"></div>
             <button type="submit" class="btn btn-primary">Submit</button>
-            <div id="result"></div>
+            <div id="contact-result"></div>
           </form>
         </div>
       </div>
@@ -101,13 +101,13 @@ const { title, description, meta_title, image } = contact.data;
 </Base>
 
 <script is:inline>
-const form = document.getElementById('form');
-const result = document.getElementById('result');
+const contactForm = document.getElementById('contact-form');
+const contactResult = document.getElementById('contact-result');
 
-form.addEventListener('submit', function(e) {
+contactForm.addEventListener('submit', function(e) {
     e.preventDefault();
     
-    const formData = new FormData(form);
+    const formData = new FormData(contactForm);
     
     // Get the name input value
     const name = formData.get('name');
@@ -118,7 +118,7 @@ form.addEventListener('submit', function(e) {
     // Append the custom subject to the form data
     formData.append('subject', subject);
 
-    const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
+    const hCaptcha = contactForm.querySelector('textarea[name=h-captcha-response]').value;
 
     if (!hCaptcha) {
         e.preventDefault();
@@ -129,7 +129,7 @@ form.addEventListener('submit', function(e) {
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
     
-    result.innerHTML = "Please wait...";
+    contactResult.innerHTML = "Please wait...";
 
     fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -142,20 +142,20 @@ form.addEventListener('submit', function(e) {
     .then(async (response) => {
         let json = await response.json();
         if (response.status == 200) {
-            result.innerHTML = json.message;
+            contactResult.innerHTML = json.message;
         } else {
             console.log(response);
-            result.innerHTML = json.message;
+            contactResult.innerHTML = json.message;
         }
     })
     .catch(error => {
         console.log(error);
-        result.innerHTML = "Something went wrong!";
+        contactResult.innerHTML = "Something went wrong!";
     })
     .then(function() {
-        form.reset();
+        contactForm.reset();
         setTimeout(() => {
-            result.style.display = "none";
+            contactResult.style.display = "none";
         }, 3000);
     });
 });
